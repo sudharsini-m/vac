@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flower</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg,#89f7fe,#66a6ff);
+        }
+        .flower{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+        }
+        img:hover{
+           transform:scale(1.1);
+           box-shadow:0 10px 20px rgba(0,0,0,0.4);
+        }
+        a{
+            display: flex;
+            justify-content: top;
+            align-content: top;
+            font-size: 40px;
+            color: rgb(251, 1, 97);
+        }
+        a:hover{
+            color: black;
+        }
+        .move{
+            animation: silde 2s linear infinite alternate;
+        }
+        @keyframes silde{
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <a href="image.html" class="move" style="text-decoration: none;" >Back 👈</a>
+        <img src="flower2.png" alt="image">
+        <img src="flower3.png" alt="image">
+        <img src="flower4.png" alt="image">
+    </div>
+</body>
+</html>

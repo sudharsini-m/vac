@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(253, 3, 86);
+        }
+        th,td{
+            border:  2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        .table{
+            background-color: white;
+            padding: 15px;
+        }
+        a{
+            display: flex;
+            justify-content: top;
+            align-content: top;
+            font-size: 30px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <a href="main.html" style="text-decoration: none;">Back 👈</a>
+        <h1>TIME TABLE</h1>
+        <table>
+            <tr>
+                <th>Day/Time</th>
+                <th>8:30-9:20</th>
+                <th>9:20-10:10</th>
+                <th>10:10-10:30</th>
+                <th>10:30-11:20</th>
+                <th>11:20-12:10</th>
+                <th>12:10-1:00</th>
+                <th>1:00-1:45</th>
+                <th>1:45-2:35</th>
+                <th>2:35-3:35</th>
+                <th>3:35-4:15</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td>SDN</td>
+                <td>VZ</td>
+                <td rowspan="6">BREAK</td>
+                <td>OOSE</td>
+                <td>IOT</td>
+                <td>IIE</td>
+                <td rowspan="6">LUNCH</td>
+                <td colspan="3">CSM LAB</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>CSM</td>
+                <td>SDN</td>
+                <td>IIE</td>
+                <td colspan="2">OOSE/IOT LAB</td>
+                <td>MC</td>
+                <td>IOT</td>
+                <td>OOSE</td>
+            </tr>
+            <tr>
+                <th>Wesnesday</th>
+                <td>VZ</td>
+                <td>CSM</td>
+                <td>SDN</td>
+                <td colspan="2">OOSE/IOT LAB</td>
+                <td>IOT</td>
+                <td>OOSE</td>
+                <td>IIE</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>IOT</td>
+                <td>MC</td>
+                <td>VZ</td>
+                <td>IIE</td>
+                <td>SDN</td>
+                <td>CSM</td>
+                <td colspan="2">VZ/SDN LAB</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>IIE</td>
+                <td>NM</td>
+                <td colspan="3">NAAN MUDHALVAN</td>
+                <td>VZ</td>
+                <td>OOSE</td>
+                <td>AP</td>
+            </tr>
+             <tr>
+                <th>Saturday</th>
+                <td>OOSE</td>
+                <td>IOT</td>
+                <td>CSM</td>
+                <td colspan="2">VZ/SDN LAB</td>
+                <td colspan="2">VAC</td>
+                <td>---</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        document.addEventListener("mouseenter",function(){
+            document.getElementsByClassName("table")[0].style.boxShadow="20px 20px 20px white"
+        })
+        document.addEventListener("mouseleave",function(){
+            document.getElementsByClassName("table")[0].style.boxShadow="0px 0px 0px white"
+        })
+    </script>
+</body>
+</html>

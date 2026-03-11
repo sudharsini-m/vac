@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg,#00c6ff,#0072ff);
+
+        }
+        .image{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            align-items: center;
+        }
+        .circle{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        .circle:hover{
+            box-shadow:0 15px 30px rgba(0,0,0,0.5);
+        }
+        a{
+            display: flex;
+            justify-content: top;
+            align-content: top;
+            font-size: 40px;
+            color: rgb(253, 14, 90);
+        }
+        a:hover{
+            color: black;
+        }
+        .move{
+            animation: slide 2s linear infinite alternate;
+
+        }
+        @keyframes slide{
+            from{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <a href="main.html" class="move" style="text-decoration: none;">⬅ Back</a>
+        <a href="dog.html"> 
+            <img src="dog1.png" class="circle move" alt="image">
+        </a>
+        <a href="flower.html"> 
+            <img src="flower1.png" class="circle move" alt="image">
+        </a>
+        <a href="mountain.html"> 
+            <img src="mountain1.png" class="circle move" alt="image">
+        </a>
+    </div>
+</body>
+</html>

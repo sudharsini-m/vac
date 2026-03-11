@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg,#667eea,#764ba2);
+
+        }
+        .main{
+            background: rgba(255,255,255,0.2);
+            padding:40px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,0.3);
+        }
+        button{
+            margin:15px auto;
+            display: block;
+            text-align: center;
+            width:200px;
+            height:50px;
+            border:none;
+            border-radius:30px;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.4s;
+            color:white;
+            background:linear-gradient(45deg,#ff6a00,#ee0979);
+        }
+        button i{
+            margin-right:10px;
+        }
+        h1{
+            text-align: center;
+            letter-spacing: 3px;
+        }
+        button:hover{
+            transform:translateY(-5px) scale(1.05);
+            background:linear-gradient(45deg,#00c6ff,#0072ff);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>VAC PORTAL🎉</h1>
+        <button onclick="window.location.href='table.html'"><i class="fas fa-table"></i>Timetable</button>
+        <button onclick="window.location.href='image.html'"><i class="fas fa-image"></i>Iamge</button>
+    </div>
+</body>
+</html>
